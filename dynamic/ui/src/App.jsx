@@ -67,39 +67,17 @@ export default class App extends React.Component {
             console.log("Message has been received");
             console.log(evt.data);
             let data = JSON.parse(evt.data);
-            let content = JSON.parse(data.content);
-            console.log("object", data);
             switch (data.type) {
                 case "auth":
-                    console.log("content: ", content);
-                    console.log("content message: ", content.Message);
-                    if (content.Code !== undefined) {
-                        switch(content.Code){
-                            case 400:
-                                alert("Bad Request\n"+content.Message);
-                                break;
-                            case 401:
-                                alert("Unauthorized\n"+content.Message);
-                                break;
-                            case 500:
-                                alert("Internal Server Error\n"+content.Message);
-                                break;
-                        }
-                        store.dispatch(unauthenticated());
-                    } else {
-                        store.dispatch(putDataFromServer(content));
-                        store.dispatch(redirectToMainPage());
-                    }
+                    let content = JSON.parse(data.content);
+                    store.dispatch(putDataFromServer(content));
+                    store.dispatch(redirectToMainPage());
                     break;
                 case "registration":
-                    console.log("content: ", content);
-                    console.log("content message: ", content.Message);
-                    if (content.Message !== undefined) {
-                        alert(content.Message);
-                        store.dispatch(unauthenticated());
-                    }else {
-                        store.dispatch(loadDataToRequest(store.getState().registration, ws));
-                    }
+                    store.dispatch(loadDataToRequest(store.getState().registration, ws));
+                    break;
+                case "error":
+                    alert(data.content);
                     break;
                 default:
                     alert( "Unexpected type" );
