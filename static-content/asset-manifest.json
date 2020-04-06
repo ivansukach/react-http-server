@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7e36adc.chunk.css",
+    "main.js": "/static/js/main.016d37c3.chunk.js",
+    "main.js.map": "/static/js/main.016d37c3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0de188ca.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0de188ca.js.map",
+    "static/js/2.c322041b.chunk.js": "/static/js/2.c322041b.chunk.js",
+    "static/js/2.c322041b.chunk.js.map": "/static/js/2.c322041b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3d244fef07e821a78cf2d47501bca6b5.js": "/precache-manifest.3d244fef07e821a78cf2d47501bca6b5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b7e36adc.chunk.css.map": "/static/css/main.b7e36adc.chunk.css.map",
+    "static/js/2.c322041b.chunk.js.LICENSE.txt": "/static/js/2.c322041b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/d_Charger.6a167556.otf",
+    "static/media/bg.jpg": "/static/media/bg.751d7b6c.jpg",
+    "static/media/giphy.gif": "/static/media/giphy.de239fc7.gif",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/myface.jpg": "/static/media/myface.36534e3c.jpg",
+    "static/media/pikachu.gif": "/static/media/pikachu.50e7012b.gif",
+    "static/media/pirates.mp3": "/static/media/pirates.dca56646.mp3",
+    "static/media/tortose.gif": "/static/media/tortose.edfa16b9.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0de188ca.js",
+    "static/js/2.c322041b.chunk.js",
+    "static/css/main.b7e36adc.chunk.css",
+    "static/js/main.016d37c3.chunk.js"
+  ]
+}
